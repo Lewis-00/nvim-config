@@ -10,7 +10,10 @@ local keymap = vim.keymap -- for conciseness
 keymap.set("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search highlights" })
 
 -- delete single character without copying into register
--- keymap.set("n", "x", '"_x')
+keymap.set("n", "x", '"_x')
+
+-- exit insert mode map
+keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
 
 -- window management
 keymap.set("n", "<leader>sv", "<C-w>v", { desc = "Split window vertically" }) -- split window vertically
