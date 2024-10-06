@@ -46,7 +46,7 @@ return {
             "isort", -- python formatter
             "black", -- python formatter
             "pylint",
-            --"eslint_d", custom install @13
+            -- "eslint_d", --[[ custom install @13.1.2 with MasonInstall ]]
          },
       })
    end,

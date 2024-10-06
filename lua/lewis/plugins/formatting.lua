@@ -3,6 +3,26 @@ return {
    event = { "BufReadPre", "BufNewFile" },
    config = function()
       local conform = require("conform")
+      local prettier = require("conform.formatters.prettier")
+      local util = require("conform.util")
+
+      -- Adding Prettier arguments
+      util.add_formatter_args(prettier, {
+         "--print-width",
+         "120", -- Set max line width
+         "--trailing-comma",
+         "none", -- No trailing commas
+         "--single-quote",
+         "true", -- Use single quotes
+         "--tab-width",
+         "2", -- Set indentation to 2 spaces
+         "--semi",
+         "true", -- Ensure semicolons are used
+         "--bracketSpacing",
+         "true", -- Add space between brackets in object literals
+         "--arrow-parens",
+         "avoid", -- Avoid parentheses when there's a single parameter in arrow function
+      })
 
       conform.setup({
          formatters_by_ft = {

@@ -14,9 +14,7 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({ { import = "lewis.plugins" }, { import = "lewis.plugins.lsp" } }, {
    checker = {
       enabled = true,
-      notify = false,
-   },
-   change_detection = {
-      notify = false,
    },
 })
+
+vim.cmd("colorscheme onedark")

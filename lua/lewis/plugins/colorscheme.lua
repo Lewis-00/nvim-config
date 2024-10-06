@@ -46,12 +46,6 @@ return {
             },
          },
       },
-      config = function(_, opts)
-         require("catppuccin").setup(opts)
-         vim.cmd("colorscheme catppuccin-mocha")
-         vim.api.nvim_set_hl(0, "Normal", { bg = "NONE" })
-         vim.api.nvim_set_hl(0, "NormalFloat", { bg = "NONE" })
-      end,
    },
    {
       -- Default options:
@@ -77,13 +71,12 @@ return {
             end,
             theme = "wave", -- Load "wave" theme when 'background' option is not set
             background = { -- map the value of 'background' option to a theme
-               dark = "wave", -- try "dragon" !
-               light = "lotus",
+               dark = "wave", -- try "dragon" ! light = "lotus",
             },
          })
-
-         -- setup must be called before loading
-         -- vim.cmd("colorscheme kanagawa")
       end,
+   },
+   {
+      "navarasu/onedark.nvim",
    },
 }
