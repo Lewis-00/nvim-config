@@ -1,5 +1,7 @@
 # Neovim Config 💻
 
-This is my initial Neovim configuration, set up with the help of a few YouTube tutorials. Right now, it's quite basic, but it gives me the foundation to explore and understand how Neovim works.
+This is my Neovim config, and it has everything you need to get started. 🎯
 
-As I get more familiar and figure out my specific needs, this configuration will evolve and become more personalized to my workflow. 👾
+There’s always room for improvement, and I’m constantly tweaking it as I discover new tools and workflows. If you have suggestions or improvements, feel free to open a pull request! 🚀
+
+Have fun 💫
