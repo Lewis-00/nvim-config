@@ -1,8 +1,7 @@
 return {
-   -- disabled untill github will give me the student again
-   -- {
-   --    "github/copilot.vim",
-   -- },
+   {
+      "github/copilot.vim",
+   },
    {
       "hrsh7th/nvim-cmp",
       event = "InsertEnter",

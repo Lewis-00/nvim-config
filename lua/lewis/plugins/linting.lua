@@ -26,6 +26,12 @@ return {
          end,
       }
 
+      pylint.args = {
+         "--disable=missing-module-docstring",
+         "--disable=missing-class-docstring",
+         "--disable=missing-function-docstring",
+      }
+
       local lint_augroup = vim.api.nvim_create_augroup("lint", { clear = true })
 
       vim.api.nvim_create_autocmd({ "BufEnter", "BufWritePost", "InsertLeave" }, {
